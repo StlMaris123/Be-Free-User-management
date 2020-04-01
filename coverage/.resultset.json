@@ -1,0 +1,78 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/stl/code/Ruby/be_free/app/helpers/pages_helper.rb": [
+        0,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/helpers/application_helper.rb": [
+        0,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/jobs/application_job.rb": [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/controllers/application_controller.rb": [
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/controllers/pages_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/models/user.rb": [
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1585766482
+  }
+}
