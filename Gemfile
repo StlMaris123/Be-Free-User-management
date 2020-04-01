@@ -36,6 +36,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rubocop'
   gem 'brakeman'
+  gem 'coveralls', require: false
 end
 
 group :development do
