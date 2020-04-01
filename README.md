@@ -3,22 +3,19 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+# Be-Free System
+Be Free System is a web application that provides a safe space for women to discuss issues that affect their female reproductive health.
 
-* Ruby version
+**Dependencies**
+ruby 2.7.0
 
-* System dependencies
+Rails 6.0.2.1
 
-* Configuration
+**Installations**
 
-* Database creation
+To Do
 
-* Database initialization
+**Contribution guide**
 
-* How to run the test suite
+To Do
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
