@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_04_10_181750) do
   create_table "forums", force: :cascade do |t|
     t.string "title"
     t.text "body"
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.index ["user_id"], name: "index_forums_on_user_id"
   end
 
