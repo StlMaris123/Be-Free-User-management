@@ -37,6 +37,7 @@ group :development, :test do
   gem 'rubocop'
   gem 'brakeman'
   gem 'coveralls', require: false
+  gem 'dotenv-rails'
 end
 
 group :development do
