@@ -1,3 +1,6 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<ul>
+ <% TwitterApi.twitter_feeds.each do |tweet| %>
+<li> <%=tweet.text %></li>
+<% end%>
+</ul>
 
