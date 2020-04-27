@@ -29,7 +29,7 @@ gem 'awesome_print'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'devise-jwt'
-gem 'redis'
+gem 'redis-rails'
 gem 'redis-session-store'
 
 group :development, :test do
