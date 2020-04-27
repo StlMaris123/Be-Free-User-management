@@ -13,6 +13,10 @@ Devise.setup do |config|
     jwt.secret = ENV['DEVISE_SECRET']
   end
 
+  Warden::Manager.after_authentication do |record, warden, options|
+    warden.request.session.try(:delete, :_csrf_token)
+  end
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
