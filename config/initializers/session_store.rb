@@ -7,6 +7,6 @@ Rails.application.config.session_store :redis_session_store, {
   redis: {
     expire_after: 1.week,
     key_prefix: 'be_free:session',
-    url: ENV['REDIS_SESSIONS_URL']
+    url: ENV['REDIS_URL']
   }
 }
