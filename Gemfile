@@ -31,6 +31,10 @@ gem 'devise'
 gem 'devise-jwt'
 gem 'redis-rails'
 gem 'redis-session-store'
+gem 'rails_12factor'
+gem 'bootstrap'
+# gem 'unicorn'
+gem 'jquery-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
