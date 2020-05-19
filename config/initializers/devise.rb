@@ -13,7 +13,7 @@ Devise.setup do |config|
     jwt.secret = ENV['DEVISE_SECRET']
   end
 
-  Warden::Manager.after_authentication do |record, warden, options|
+  Warden::Manager.after_authentication do |_record, warden, _options|
     warden.request.session.try(:delete, :_csrf_token)
   end
 
@@ -303,4 +303,17 @@ Devise.setup do |config|
   # When set to false, does not sign a user in automatically after their password is
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
+
+  config.omniauth :google_oauth2, ENV['GOOGLE_CLIENT_ID'], ENV['GOOGLE_CLIENT_SECRET'],
+                  {
+
+                    access_type: 'offline',
+
+                    prompt: 'consent',
+
+                    select_account: true,
+
+                    scope: 'userinfo.email, calendar'
+
+                  }
 end

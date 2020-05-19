@@ -29,9 +29,12 @@ gem 'awesome_print'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'devise-jwt'
+gem 'omniauth-google-oauth2'
+
 gem 'redis-rails'
 gem 'redis-session-store'
 gem 'rails_12factor'
+
 gem 'bootstrap'
 # gem 'unicorn'
 gem 'jquery-rails'
@@ -44,6 +47,7 @@ group :development, :test do
   gem 'brakeman'
   gem 'coveralls', require: false
   gem 'dotenv-rails'
+  gem 'annotate'
 end
 
 group :development do
