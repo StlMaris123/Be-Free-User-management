@@ -34,8 +34,9 @@ gem 'omniauth-google-oauth2'
 gem 'redis-rails'
 gem 'redis-session-store'
 gem 'rails_12factor'
-
+gem 'geocoder'
 gem 'bootstrap'
+gem 'ffaker'
 # gem 'unicorn'
 gem 'jquery-rails'
 

@@ -3,6 +3,6 @@ class AddAttributesToUsers < ActiveRecord::Migration[6.0]
     add_column :users, :latitude, :float
     add_column :users, :longitude, :float
     add_column :users, :address, :string
-    add_column :users, :nick_name, :float
+    add_column :users, :nick_name, :string
   end
 end

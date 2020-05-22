@@ -23,16 +23,12 @@
     <%= f.text_field :phone_number, autocomplete: "phone_number" %>
   </div>
 
-   <div class="field">
-    <%= f.label :age %><br />
-    <%= f.number_field :age, autocomplete: "age" %>
+     <div class="field">
+    <%= f.label :adress %><br />
+    <%= f.text_field :address, autocomplete: "address", placeholder: 'city,country'  %>
   </div>
 
-   <div class="field">
-    <%= f.label :gender %><br />
-    <%= f.text_field :gender,  autocomplete: "gender" %>
-  </div>
-  
+     
    <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>

@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 2020_05_22_113214) do
     t.float "latitude"
     t.float "longitude"
     t.string "address"
-    t.float "nick_name"
+    t.string "nick_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
