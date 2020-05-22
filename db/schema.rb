@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_19_180902) do
+ActiveRecord::Schema.define(version: 2020_05_22_113214) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_05_19_180902) do
     t.datetime "start_date"
     t.datetime "end_date"
     t.string "doctor_name"
+    t.text "description"
     t.index ["user_id"], name: "index_appointments_on_user_id"
   end
 
@@ -57,6 +58,10 @@ ActiveRecord::Schema.define(version: 2020_05_19_180902) do
     t.datetime "expires_at"
     t.string "refresh_token"
     t.string "session_id"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "address"
+    t.float "nick_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
