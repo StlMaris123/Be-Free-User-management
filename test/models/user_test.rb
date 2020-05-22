@@ -17,6 +17,14 @@
 #  gender                 :integer          default("female")
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  access_token           :string
+#  expires_at             :datetime
+#  refresh_token          :string
+#  session_id             :string
+#  latitude               :float
+#  longitude              :float
+#  address                :string
+#  nick_name              :string
 #
 require 'test_helper'
 

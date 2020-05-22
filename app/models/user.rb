@@ -17,14 +17,26 @@
 #  gender                 :integer          default("female")
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  access_token           :string
+#  expires_at             :datetime
+#  refresh_token          :string
+#  session_id             :string
+#  latitude               :float
+#  longitude              :float
+#  address                :string
+#  nick_name              :string
 #
 class User < ApplicationRecord
+  require 'ffaker'
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :jwt_authenticatable, :omniauthable, :omniauth_providers => [:google_oauth2], jwt_revocation_strategy: Devise::JWT::RevocationStrategies::Null
   enum gender: [:female, :male, :transgender, :dont_wish_to_disclose]
   # validates :age, numericality: { greater_than: 0 }
+  before_create :set_nick_name
+  geocoded_by :address
+  after_validation :geocode, :if => lambda{ |obj| obj.address_changed? }
 
   def self.from_omniauth(access_token)
     data = access_token.info
@@ -38,5 +50,10 @@ class User < ApplicationRecord
       )
     end
     user
+  end
+
+  private
+  def set_nick_name
+    self.nick_name = FFaker::Name.name
   end
 end
