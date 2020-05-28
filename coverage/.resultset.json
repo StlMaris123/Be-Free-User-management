@@ -15,6 +15,10 @@
         0,
         0
       ],
+      "/home/stl/code/Ruby/be_free/app/helpers/registrations_helper.rb": [
+        0,
+        0
+      ],
       "/home/stl/code/Ruby/be_free/app/helpers/omniauth_callbacks_helper.rb": [
         0,
         0
@@ -53,31 +57,21 @@
         0,
         0,
         0,
-        0,
         null,
-        null,
-        0,
-        0,
-        0,
         0,
         null,
         0,
         0,
         0,
-        0,
-        0,
         null,
         0,
-        0,
-        0,
-        0,
-        null,
         0,
         0,
         0,
         0
       ],
       "/home/stl/code/Ruby/be_free/app/controllers/pages_controller.rb": [
+        0,
         0,
         0,
         0,
@@ -97,6 +91,32 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/stl/code/Ruby/be_free/app/controllers/registrations_controller.rb": [
+        null,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
         0,
         0,
         0,
@@ -186,6 +206,6 @@
         0
       ]
     },
-    "timestamp": 1590152080
+    "timestamp": 1590678734
   }
 }
