@@ -37,6 +37,7 @@ gem 'rails_12factor'
 gem 'geocoder'
 gem 'bootstrap'
 gem 'ffaker'
+
 # gem 'unicorn'
 gem 'jquery-rails'
 
