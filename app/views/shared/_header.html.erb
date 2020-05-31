@@ -6,17 +6,17 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#about">About Us <span class="sr-only">(current)</span></a>
+        <h5><a class="nav-link" href="#about">About Us <span class="sr-only">(current)</span></a></h5>
       </li>
        <% if user_signed_in? %>
         <li class="nav-item">
-           <%= link_to "Discussions", 'https://enigmatic-atoll-65882.herokuapp.com/', :class => 'nav-link'  %> 
+           <h5><%= link_to "Discussions", 'https://enigmatic-atoll-65882.herokuapp.com/', :class => 'nav-link'  %></h5>
         </li>
         <li class="nav-item">
-         <%= link_to "Appointments", 'https://dry-fortress-76246.herokuapp.com/', :class => 'navbar-link', :class => 'nav-link' %>
+         <h5><%= link_to "Appointments", 'https://dry-fortress-76246.herokuapp.com/', :class => 'navbar-link', :class => 'nav-link' %></h5>
         </li>
          <li class="nav-item">
-          <%= link_to "Payments", 'https://secure-cliffs-28598.herokuapp.com/', :class => 'navbar-link', :class => 'nav-link'%>
+          <h5><%= link_to "Payments", 'https://secure-cliffs-28598.herokuapp.com/', :class => 'navbar-link', :class => 'nav-link'%></h5>
         </li>
         </ul>
         <span class="navbar-text">
